@@ -1091,6 +1091,7 @@ instance_groups:
   - name: route_emitter
     release: diego
     properties:
+      loggregator: *diego_loggregator_client_properties
       diego:
         route_emitter:
           local_mode: true
